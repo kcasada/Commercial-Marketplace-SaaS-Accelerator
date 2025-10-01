@@ -139,8 +139,8 @@ if ($SQLDatabaseName -eq "") {
 
 Write-Host "🛑  KeyVault section "
 
-#if($KeyVault -eq "")
-#{
+if($KeyVault -eq "")
+{
 Write-Host "User did not define KeyVault, so we will create one."
 # User did not define KeyVault, so we will create one. 
 # We need to check if the KeyVault already exists or purge before going forward
@@ -174,7 +174,7 @@ Write-Host "User did not define KeyVault, so we will create one."
 	#endregion
 	}
 
-#}
+}
 
 $SaaSApiConfiguration_CodeHash= git log --format='%H' -1
 $azCliOutput = if($Quiet){'none'} else {'json'}
