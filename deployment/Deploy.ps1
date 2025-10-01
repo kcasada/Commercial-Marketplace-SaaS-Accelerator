@@ -141,6 +141,7 @@ Write-Host "🛑  KeyVault section "
 
 if($KeyVault -eq "")
 {
+Write-Host "User did not define KeyVault, so we will create one."
 # User did not define KeyVault, so we will create one. 
 # We need to check if the KeyVault already exists or purge before going forward
 
