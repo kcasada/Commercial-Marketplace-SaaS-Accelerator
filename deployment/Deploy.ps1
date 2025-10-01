@@ -390,7 +390,7 @@ if (!($ADMTApplicationIDPortal)) {
 	{
 		"requestedAccessTokenVersion" : 2
 	},
-	"signInAudience" : "AzureADandPersonalMicrosoftAccount",
+	"signInAudience" : "AzureADMyOrg",
 	"web":
 	{ 
 		"redirectUris": 
