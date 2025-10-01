@@ -137,6 +137,8 @@ if ($SQLDatabaseName -eq "") {
     $SQLDatabaseName = $WebAppNamePrefix +"AMPSaaSDB"
 }
 
+Write-Host "🛑  KeyVault section "
+
 if($KeyVault -eq "")
 {
 # User did not define KeyVault, so we will create one. 
